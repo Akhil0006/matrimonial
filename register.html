@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Merasaathi</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .register-container {
+            max-width: 500px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        .register-container h2 {
+            text-align: center;
+            color: #de2e83;
+            margin-bottom: 25px;
+        }
+        .register-container input, 
+        .register-container select {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 15px;
+            outline: none;
+        }
+        .register-container button {
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(90deg, #e21747, #c13a5c);
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s;
+            margin-top: 10px;
+        }
+        .register-container button:hover {
+            background: linear-gradient(90deg, #f0184a, #bd406e);
+        }
+        .register-container p {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+        .register-container a {
+            color: #ee1729;
+            text-decoration: none;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Merasaathi</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="matches.html">Matches</a> <!-- Linked to Matches Page -->
+            <a href="search.html">Search</a> <!-- Linked to Search Page -->
+            <a href="login.html">Login</a> <!-- Linked to Login Page -->
+            <a href="register.html">Register</a> <!-- Linked to Register Page -->
+        </nav>
+    </header>
+
+    <div class="register-container">
+        <h2>Create Your Profile</h2>
+        <form name="registerForm" onsubmit="return validateRegisterForm()">
+            <input type="text" name="fullname" placeholder="Full Name">
+            <input type="email" name="email" placeholder="Email">
+            <input type="password" name="password" placeholder="Password">
+            <select name="lookingFor">
+                <option value="">Looking for</option>
+                <option value="bride">Bride</option>
+                <option value="groom">Groom</option>
+            </select>
+            <button type="submit">Register</button>
+        </form>
+        <p>Already have an account? <a href="login.html">Login Here</a></p>
+    </div>
+    <script src="script.js"></script>
+    <footer>
+        &copy; 2025 Merasaathi. All Rights Reserved.
+    </footer>
+
+</body>
+</html>

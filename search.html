@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search - Merasaathi</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .search-container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: #fff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+        }
+        .search-container select {
+            width: 48%;
+            padding: 10px;
+            margin: 10px 1%;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+        .search-container button {
+            padding: 12px 20px;
+            background: linear-gradient(90deg, #bd4780, #950220);
+            color: white;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            display: block;
+            margin: 20px auto 0;
+            transition: background 0.3s;
+        }
+        .search-container button:hover {
+            background: linear-gradient(90deg, #e12b77, #af0641);
+        }
+        .profiles {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 30px auto;
+            max-width: 1000px;
+        }
+        .profile-card {
+            background: #fff;
+            width: 250px;
+            margin: 15px;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+            overflow: hidden;
+            text-align: center;
+            padding-bottom: 15px;
+        }
+        .profile-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+        .profile-card h3 {
+            margin: 10px 0 5px;
+            color: #eb1e73;
+        }
+        .profile-card p {
+            margin: 0 10px 5px;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Merasaathi</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="matches.html">Matches</a>
+            <a href="search.html">Search</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+        </nav>
+    </header>
+
+    <div class="search-container">
+        <h2 style="text-align:center; color:#5c2d91;">Search Profiles</h2>
+        <form>
+            <center>
+            <select required>
+                <option value="">Looking for</option>
+                <option value="bride">Bride</option>
+                <option value="groom">Groom</option>
+            </select>
+            <select required>
+                <option value="">Age Range</option>
+                <option value="18-25">18-25</option>
+                <option value="26-30">26-30</option>
+                <option value="31-40">31-40</option>
+            </select>
+            <select required>
+                <option value="">Religion</option>
+                <option value="hindu">Hindu</option>
+                <option value="muslim">Muslim</option>
+                <option value="christian">Christian</option>
+                <option value="sikh">Sikh</option>
+            </select>
+            <select required>
+                <option value="">City</option>
+                <option value="delhi">Delhi</option>
+                <option value="mumbai">Mumbai</option>
+                <option value="bangalore">Bangalore</option>
+                <option value="kolkata">Kolkata</option>
+            </select>
+            <button type="submit">Search Now</button>
+            </center>
+        </form>
+    </div>
+
+    <h2 style="text-align:center; color:#e42e9e;">Suggested Profiles</h2>
+    <div class="profiles">
+
+        <!-- Profile 1 - Bride -->
+        <div class="profile-card">
+            <img src="https://i.pinimg.com/736x/50/e4/95/50e4952ec21be842bc2aa2a0fcf17335.jpg" alt="Bride Profile">
+            <h3>Ankita Sharma</h3>
+            <p>Age: 25 | Hindu</p>
+            <p>City: Delhi</p>
+        </div>
+
+        <!-- Profile 2 - Groom -->
+        <div class="profile-card">
+            <img src="https://i.pinimg.com/736x/b7/14/be/b714be587097234442dfd9062b49083f.jpg" alt="Groom Profile">
+            <h3>Rahul Verma</h3>
+            <p>Age: 28 | Hindu</p>
+            <p>City: Mumbai</p>
+        </div>
+
+        <!-- Profile 3 - Bride -->
+        <div class="profile-card">
+            <img src="https://www.redveds.com/wp-content/uploads/2023/09/DSC00855-scaled-2-3-1366x2048-1.jpeg" alt="Bride Profile">
+            <h3>Anjali Patel</h3>
+            <p>Age: 26 | Sikh</p>
+            <p>City: Bangalore</p>
+        </div>
+
+        <!-- Profile 4 - Groom -->
+        <div class="profile-card">
+            <img src="https://img.freepik.com/free-photo/stylish-indian-beard-man-pink-tshirt-india-model-posed-outdoor-streets-city_627829-12720.jpg?semt=ais_hybrid&w=740" alt="Groom Profile">
+            <h3>Alex Paul</h3>
+            <p>Age: 26 | Christian</p>
+            <p>City: Kolkata</p>
+        </div>
+
+    </div>
+
+    <footer>
+        &copy; 2025 Merasaathi. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
